@@ -100,6 +100,33 @@ const Contact = () => {
                 </div>
               </CardContent>
             </Card>
+
+            <Card className="bg-gradient-card border-border shadow-soft">
+              <CardContent className="pt-6">
+                <div className="flex items-start gap-4">
+                  <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Mail className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg text-foreground mb-2">Email</h3>
+                    <a 
+                      href="mailto:contato@michelematosconsultoria.com.br"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      contato@michelematosconsultoria.com.br
+                    </a>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Button
+              className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground"
+              onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Olá! Gostaria de saber mais sobre os serviços de consultoria.")}`, '_blank')}
+            >
+              <Phone className="mr-2 h-5 w-5" />
+              Falar no WhatsApp
+            </Button>
           </div>
 
           {/* Contact Form */}
