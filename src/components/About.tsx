@@ -2,17 +2,17 @@ import { Award, Shield, Users } from "lucide-react";
 
 const About = () => {
   return (
-    <section id="sobre" className="py-20 bg-muted">
+    <section id="sobre" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-foreground">
             Sobre Nós
           </h2>
-          <div className="h-1 w-24 bg-gradient-hero mx-auto mb-12 rounded-full" />
+          <div className="h-1 w-24 bg-gradient-to-r from-primary to-secondary mx-auto mb-12 rounded-full" />
           
-          <div className="bg-card rounded-2xl p-8 md:p-12 shadow-elegant">
+          <div className="bg-card rounded-2xl p-8 md:p-12 shadow-none">
             <p className="text-lg text-card-foreground leading-relaxed mb-8">
-              <span className="font-bold text-primary">Michele Matos Consultoria de DP e RH</span> nasceu da experiência da sua fundadora, que atua há mais de 18 anos na área de Departamento Pessoal.
+              <span className="font-bold text-white">Michele Matos Consultoria de DP e RH</span> nasceu da experiência da sua fundadora, que atua há mais de 18 anos na área de Departamento Pessoal.
             </p>
             
             <p className="text-lg text-card-foreground leading-relaxed mb-8 font-medium">
@@ -44,6 +44,10 @@ const About = () => {
                 <p className="text-muted-foreground">Compromisso com segurança e qualidade</p>
               </div>
             </div>
+
+            <p className="text-lg text-card-foreground mt-8 text-center">
+              Contato: <a href="mailto:michelecontabilidade@hotmail.com" className="text-primary underline">michelecontabilidade@hotmail.com</a>
+            </p>
           </div>
         </div>
       </div>
