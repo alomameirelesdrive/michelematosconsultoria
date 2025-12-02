@@ -14,8 +14,8 @@ const services = [
   },
   {
     icon: Calculator,
-    title: "Cálculos Trabalhistas",
-    description: "Cálculos precisos de férias, rescisões e demais verbas trabalhistas",
+    title: "Consultoria e Assessoria em Cálculos",
+    description: "Orientação especializada em cálculos de verbas trabalhistas e encargos",
   },
   {
     icon: Database,
