@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FileText, Calculator, Database, Users, ClipboardCheck } from "lucide-react";
+import { FileText, Calculator, Database, Users, ClipboardCheck, Home, CheckCircle, Scale } from "lucide-react";
 
 const services = [
   {
@@ -26,6 +26,21 @@ const services = [
     icon: FileText,
     title: "Terceirização de Folha de Pagamento",
     description: "Gestão completa da folha de pagamento da sua empresa",
+  },
+  {
+    icon: Home,
+    title: "Folha MEI e Doméstico",
+    description: "Processamento de folha para MEI e empregados domésticos",
+  },
+  {
+    icon: CheckCircle,
+    title: "Verificação de Cálculo de Rescisão, Salário ou Férias",
+    description: "Análise e validação de cálculos trabalhistas para garantir precisão",
+  },
+  {
+    icon: Scale,
+    title: "Serviços Jurídicos",
+    description: "Assessoria jurídica em Direito Civil, Empresarial, Trabalhista e Consumidor",
   },
 ];
 
