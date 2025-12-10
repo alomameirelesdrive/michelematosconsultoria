@@ -9,13 +9,13 @@ const Footer = () => {
           <p className="text-primary-foreground/80 mb-4">Consultoria de DP e RH</p>
           
           <a
-            href="https://www.instagram.com/michelematosconsultoria"
+            href="https://www.instagram.com/michelematos_consultoria/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground transition-colors mb-4"
           >
             <Instagram className="h-5 w-5" />
-            @michelematosconsultoria
+            @michelematos_consultoria
           </a>
           
           <p className="text-sm text-primary-foreground/60 mt-4">
