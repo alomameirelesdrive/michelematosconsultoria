@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { FileText, Calculator, Database, Users, ClipboardCheck, Home, CheckCircle, Scale } from "lucide-react";
 
 const services = [
@@ -45,6 +46,13 @@ const services = [
 ];
 
 const Services = () => {
+  const whatsappNumber = "5551993112279";
+
+  const handleWhatsAppClick = (serviceName: string) => {
+    const message = encodeURIComponent(`Olá! Gostaria de solicitar um orçamento para: ${serviceName}`);
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+  };
+
   return (
     <section id="solucoes" className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -59,7 +67,7 @@ const Services = () => {
             return (
               <Card 
                 key={index} 
-                className="border-border hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-gradient-card"
+                className="border-border hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-gradient-card flex flex-col"
               >
                 <CardHeader>
                   <div className="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center mb-4">
@@ -67,8 +75,15 @@ const Services = () => {
                   </div>
                   <CardTitle className="text-xl text-foreground">{service.title}</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{service.description}</p>
+                <CardContent className="flex flex-col flex-grow">
+                  <p className="text-muted-foreground mb-4 flex-grow">{service.description}</p>
+                  <Button 
+                    onClick={() => handleWhatsAppClick(service.title)}
+                    className="w-full mt-auto"
+                    variant="outline"
+                  >
+                    Solicitar Orçamento
+                  </Button>
                 </CardContent>
               </Card>
             );
